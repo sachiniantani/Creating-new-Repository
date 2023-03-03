@@ -1,0 +1,8 @@
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+year_of_birth = int(input("Enter your year of birth: "))
+birth_year_last_two_digits = year_of_birth % 100
+name_first_three_letters = name[:3]
+age_power_of_two = age ** 2
+password = str(birth_year_last_two_digits) + name_first_three_letters + str(age_power_of_two)
+print("Your password is:", password)
